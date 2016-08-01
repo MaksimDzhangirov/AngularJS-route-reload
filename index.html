@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+	<head>
+		<base href="/angularjs/AngularJS-route-reload/" />
+		<link rel="stylesheet" href="style.css">
+		<script src="scripts/angular.min.js"></script>
+		<script src="scripts/angular-route.min.js"></script>
+		<script src="scripts/script.js"></script>		
+	</head>
+	<body>
+		<table style="font-family: Arial;">
+			<tr>
+				<td colspan="2" class="header"><h1>Website header</h1></td>				
+			</tr>
+			<tr>
+				<td class="leftMenu">
+					<a href="home">Home</a>
+					<a href="cources">Cources</a>
+					<a href="students">Students</a>
+				</td>
+				<td class="mainContent">
+					<div ng-view></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="footer">
+					<b>Website footer</b>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>	
